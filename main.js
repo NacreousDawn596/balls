@@ -5,8 +5,8 @@ const area = 0.03; //m^2
 const gravity = 9.81; //m*s^-2
 const velocity = (d) => { return Math.sqrt(2 * 9.81 * d) };
 const getRandomFloat = (min, max) => { return Math.random() * (max - min) + min; }
-const bounceVelocity = (d) => { return getRandomFloat(0.4, 0.6) * Math.sqrt(2 * 9.81 * d) }
-const getAirResistanceForce = (velocity) => { return 0.5 * getRandomFloat(0.44, 0.5) * area * mass * velocity * velocity };
+const bounceVelocity = (d) => { return getRandomFloat(0.48, 0.52) * Math.sqrt(2 * 9.81 * d) }
+const getAirResistanceForce = (velocity) => { return 0.5 * getRandomFloat(0.46, 0.48) * area * mass * velocity * velocity };
 const sleep = (ms) => { return new Promise(resolve => setTimeout(resolve, ms)) }
 window.balls = [];
 
