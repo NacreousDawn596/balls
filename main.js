@@ -43,7 +43,7 @@ class Ball {
             timetaken += 0.01;
         }
 
-        timetaken /= 2 * velocityWithResistance;
+        timetaken /= velocityWithResistance;
         console.log("timetaken:", timetaken);
 
         this.ball.style.setProperty('--time', `${timetaken}s`);
